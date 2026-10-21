@@ -8,7 +8,7 @@ export default function page() {
       <section className="relative flex min-h-[500px] w-full max-w-6xl items-center justify-center overflow-hidden rounded-2xl bg-slate-900 px-5 py-16 text-center shadow-2xl sm:min-h-[600px] sm:px-10">
         {/* Background Image */}
         <Image
-          src="/welcomeImage.png"
+          src="/welcomeImage.PNG"
           alt="Website under construction"
           fill
           priority
