@@ -1,7 +1,9 @@
+"use client";
 import { ArrowRight } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { siteConfig, whatsappLink } from "../data/site";
+import EnquiryDialog from "./common/EnquiryDialog";
 
 export default function EnquiryBanner() {
   return (
@@ -22,11 +24,20 @@ export default function EnquiryBanner() {
               <FaWhatsapp className="h-5 w-5" /> Contact Us on WhatsApp
             </a>
           </Button>
-          <Button asChild size="lg" variant="outline" className="border-[#6E0F18] text-[#6E0F18]">
-            <a href={`mailto:${siteConfig.email}?subject=Business%20Enquiry`}>
-              Send Enquiry <ArrowRight className="ml-2 h-4 w-4" />
-            </a>
-          </Button>
+          <EnquiryDialog
+            title="Business Enquiry"
+            description="Interested in our papad products? Share your contact details and our team will get in touch."
+            trigger={
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-[#6E0F18] text-[#6E0F18] hover:bg-[#6E0F18] hover:text-white"
+              >
+                Send Enquiry
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            }
+          />
         </div>
       </div>
     </section>

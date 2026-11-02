@@ -70,7 +70,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10 py-4 text-center text-xs text-[#FBEBCB]/70">
-        © {siteConfig.name}. Established {siteConfig.established}.
+        © {siteConfig.name} | Developed with ❤️ by Ravindra Singh | VKV Digital Hub | Veer Choudhary
       </div>
     </footer>
   );

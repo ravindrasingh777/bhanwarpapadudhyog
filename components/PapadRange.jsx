@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { papadRange } from "../data/products";
+import EnquiryDialog from "./common/EnquiryDialog";
 
 const HOME_COUNT = 6;
 
@@ -17,15 +18,28 @@ function ProductCard({ product }) {
         />
       </div>
       <CardContent className="flex flex-1 flex-col gap-2 p-4 text-center">
-        <h3 className="font-serif text-base font-semibold text-[#6E0F18] sm:text-lg">{product.name}</h3>
-        <p className="line-clamp-3 text-xs text-stone-600 sm:text-sm">{product.description}</p>
+        <h3 className="font-serif text-base font-semibold text-[#6E0F18] sm:text-lg">
+          {product.name}
+        </h3>
+        <p className="line-clamp-3 text-xs text-stone-600 sm:text-sm">
+          {product.description}
+        </p>
       </CardContent>
-      <CardFooter className="justify-center p-4 pt-0">
-        <Button asChild variant="outline" size="sm" className="border-[#6E0F18]/30 mt-4 text-[#6E0F18]">
-          <a href={`/products/${product.slug}`}>
-            View Details <ArrowRight className="ml-1 h-3.5 w-3.5" />
-          </a>
-        </Button>
+      <CardFooter className="justify-center p-4 mt-3">
+        <EnquiryDialog
+          title="Business Enquiry"
+          description="Interested in our papad products? Share your contact details and our team will get in touch."
+          trigger={
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-[#6E0F18] text-[#6E0F18] hover:bg-[#6E0F18] hover:text-white"
+            >
+              Send Enquiry
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          }
+        />
       </CardFooter>
     </Card>
   );
@@ -36,9 +50,12 @@ export default function PapadRange() {
     <section id="products" className="scroll-mt-20 bg-white py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="text-center">
-          <h2 className="font-serif text-3xl font-bold text-[#6E0F18] sm:text-4xl">Our Papad Range</h2>
+          <h2 className="font-serif text-3xl font-bold text-[#6E0F18] sm:text-4xl">
+            Our Papad Range
+          </h2>
           <p className="mx-auto mt-3 max-w-2xl text-stone-600">
-            Wide variety of authentic Bikaneri papad prepared with the finest ingredients.
+            Wide variety of authentic Bikaneri papad prepared with the finest
+            ingredients.
           </p>
         </div>
 
