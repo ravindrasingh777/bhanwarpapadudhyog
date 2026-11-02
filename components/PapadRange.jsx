@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { papadRange } from "../data/products";
 
-const HOME_COUNT = 5;
+const HOME_COUNT = 6;
 
 function ProductCard({ product }) {
   return (
@@ -13,7 +13,7 @@ function ProductCard({ product }) {
           src={`/images/papad/${product.slug}.PNG`}
           alt={product.name}
           loading="lazy"
-          className="h-full w-full object-contain transition duration-500 group-hover:scale-105"
+          className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
         />
       </div>
       <CardContent className="flex flex-1 flex-col gap-2 p-4 text-center">

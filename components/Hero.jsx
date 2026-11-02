@@ -21,6 +21,16 @@ export default function Hero() {
           <h1 className="mt-3 font-serif text-4xl font-bold leading-tight text-[#6E0F18] sm:text-5xl lg:text-6xl">
             Bhanwar Papad Udyog
           </h1>
+           <div className="relative md:hidden mt-3">
+          <img
+            src="/images/hero/papad-stack.PNG"
+            alt="Stack of crispy Bikaneri papad"
+            className="aspect-[4/3] w-full rounded-3xl object-cover shadow-2xl"
+          />
+          <p className="absolute right-4 top-4 rounded-full bg-white/85 px-4 py-1.5 font-serif text-sm italic text-[#6E0F18] shadow">
+            Crispy · Healthy · Delicious
+          </p>
+        </div>
           <p className="mt-4 text-lg text-stone-700">
             Providing you the very best <span className="font-semibold">since 1976</span>
           </p>
@@ -61,11 +71,11 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative">
+        <div className="relative hidden md:block">
           <img
             src="/images/hero/papad-stack.PNG"
             alt="Stack of crispy Bikaneri papad"
-            className="aspect-[4/3] w-full rounded-3xl object-cover shadow-2xl"
+            className="aspect-[4/3] w-full rounded-3xl object-cover "
           />
           <p className="absolute right-4 top-4 rounded-full bg-white/85 px-4 py-1.5 font-serif text-sm italic text-[#6E0F18] shadow">
             Crispy · Healthy · Delicious

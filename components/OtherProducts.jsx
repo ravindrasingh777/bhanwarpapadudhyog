@@ -19,7 +19,7 @@ export default function OtherProducts() {
                 src={product.image}
                 alt={product.name}
                 loading="lazy"
-                className="h-64 w-64 rounded-full border-4 border-[#E9C77E] object-cover shadow-xl "
+                className="h-64 w-64 rounded-full border-4 border-[#E9C77E] object-center shadow-xl "
               />
               <h3 className="mt-5 font-serif text-lg font-semibold">{product.name}</h3>
               {product.detail && <p className="text-sm text-[#FBEBCB]/80">{product.detail}</p>}
