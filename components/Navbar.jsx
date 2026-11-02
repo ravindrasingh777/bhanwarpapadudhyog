@@ -16,7 +16,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-[#6E0F18]/10 bg-[#FFF8EE]/95 backdrop-blur">
       <nav className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 lg:px-8">
         <a href="#home" className="shrink-0">
-          <img src="/images/logo.png" alt="Bhanwar Papad Udyog logo" className="h-14 w-auto sm:h-16" />
+          <img src="/images/logo.PNG" alt="Bhanwar Papad Udyog logo" className="h-14 w-auto sm:h-16" />
         </a>
 
         <ul className="hidden items-center gap-5 lg:flex xl:gap-7">

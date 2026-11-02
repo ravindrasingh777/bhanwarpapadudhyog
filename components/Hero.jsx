@@ -63,7 +63,7 @@ export default function Hero() {
 
         <div className="relative">
           <img
-            src="/images/hero/papad-stack.png"
+            src="/images/hero/papad-stack.PNG"
             alt="Stack of crispy Bikaneri papad"
             className="aspect-[4/3] w-full rounded-3xl object-cover shadow-2xl"
           />

@@ -16,7 +16,7 @@ export default function AboutSection() {
         <div className="relative mx-auto w-full max-w-md">
           <div className="absolute inset-0 translate-x-3 translate-y-3 rounded-[2rem] bg-[#E9C77E]/40" />
           <img
-            src="/images/founder.png"
+            src="/images/founder.PNG"
             alt={`${siteConfig.founder}, founder`}
             loading="lazy"
             className="relative aspect-[4/5] w-full rounded-[2rem] object-cover"

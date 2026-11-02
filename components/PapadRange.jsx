@@ -10,7 +10,7 @@ function ProductCard({ product }) {
     <Card className="group gap-0 overflow-hidden rounded-2xl border-[#6E0F18]/10 p-0 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
       <div className="aspect-square overflow-hidden bg-[#FBEBCB]">
         <img
-          src={`/images/papad/${product.slug}.png`}
+          src={`/images/papad/${product.slug}.PNG`}
           alt={product.name}
           loading="lazy"
           className="h-full w-full object-contain transition duration-500 group-hover:scale-105"

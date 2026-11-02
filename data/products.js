@@ -17,7 +17,7 @@ export const papadRange = [
 ];
 
 export const otherProducts = [
-  { name: "Disco Papad", detail: "Hand Rolled, Coin Size", image: "/images/other/disco-papad.png" },
-  { name: "Machine Made Papad", image: "/images/other/machine-made-papad.png" },
-  { name: "Badi / Moongodi", image: "/images/other/badi-moongodi.png" },
+  { name: "Disco Papad", detail: "Hand Rolled, Coin Size", image: "/images/other/disco-papad.PNG" },
+  { name: "Machine Made Papad", image: "/images/other/machine-made-papad.PNG" },
+  { name: "Badi / Moongodi", image: "/images/other/badi-moongodi.PNG" },
 ];

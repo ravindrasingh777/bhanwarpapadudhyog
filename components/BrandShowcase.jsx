@@ -6,7 +6,7 @@ export default function BrandShowcase() {
     <section id="brand" className="scroll-mt-20 bg-[#6E0F18] text-white">
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-14 md:grid-cols-2 lg:px-8 lg:py-20">
          <img
-          src="/images/brands/bhanwar-packs.png"
+          src="/images/brands/bhanwar-packs.PNG"
           alt="Bhanwar papad packets"
           loading="lazy"
           className="mx-auto w-full max-w-md drop-shadow-2xl"
